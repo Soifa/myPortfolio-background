@@ -1,23 +1,209 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <title>Background</title>
+    <!-- FONT EMBED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kirang+Haerang&family=Kite+One&display=swap" rel="stylesheet">
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
-    
+    <style>
+      body {
+        background-color: #FFED81;
+        margin: 0;
+        font-size: 16px;
+        padding-top: 70px;
+      }
+
+      .webInfo {
+        width: 100vw;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        gap: 50px;
+      }
+
+      .bio {
+        flex: 2;
+        max-width: 60%;
+      }
+
+      .bio h1 {
+        font-family: "Kirang Haerang", system-ui;
+        font-size: 3.75em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.25em;
+      }
+
+      .bio h1 span:nth-child(1) {
+        color: #9747FF;
+      }
+
+      /* purple */
+      .bio h1 span:nth-child(2) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .bio h1 span:nth-child(3) {
+        color: #52B13A;
+      }
+
+      /* green */
+      .bio h1 span:nth-child(4) {
+        color: #D4A2FF;
+      }
+
+      /* lightPurple */
+      .bio h1 span:nth-child(5) {
+        color: #FF4491;
+      }
+
+      /* pastel pink */
+      .bio h1 span:nth-child(6) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .bio h1 span:nth-child(7) {
+        color: #FE97AC;
+      }
+
+      /* light pink */
+
+      .bio p {
+        font-family: "Kite One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6;
+        font-size: 1.5em;
+        max-width: 37.5em;
+      }
+
+      .photo-wrapper {
+        flex: 1;
+        max-width: 40%;
+      }
+
+      .photo-wrapper img {
+        width: 100%;
+      }
+
+      .resume-button {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+      }
+      
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #FFED81;
+        z-index: 1000;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 1em 2em;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        position: relative;
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        color: #FF4491;
+        border-bottom: 4px solid #FF4491;
+        transition: border-color 0.3s ease;
+      }
+
+      .resume-button a {
+        font-family: 'Kite One', sans-serif;
+        font-size: 20px;
+        color: #A020F0;
+        text-decoration: none;
+        padding: 12px 40px;
+        border: 3px solid #D4A2FF;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        background-color: transparent;
+        display: inline-block;
+      }
+
+      li a:hover {
+        border-bottom: 4px solid #00A0EC;
+      }
+
+      .resume-button a:hover {
+        background-color: #D4A2FF;
+        color: white;
+      }
+
+      li a[href="#background"] {
+        color: #9747FF;
+        border-bottom: 4px solid #A020F0;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="webInfo">
+      <div class="nav-bar">
+      <ul>
+        <li><a href="#background">Background</a></li>
+        <li><a href="https://soifa.github.io/myPortfolio-interest/">Interest</a></li>
+        <li><a href="https://soifa.github.io/myPortfolio-experience/">Experience</a></li>
+        <li><a href="https://soifa.github.io/myPortfolio-art-work/">Artwork</a></li>
+      </ul>
+      </div>
+
+      <div class="container">
+        <div class="photo-wrapper">
+          <img src="myPhoto.png" alt="Photo of me">
+        </div>
+        <div class="bio">
+          <h1>
+            <span>S</span><span>o</span><span>f</span><span>i</span><span>a</span> <span>X</span><span>u</span>
+          </h1>
+          <p>
+            As a Global Business and Digital Arts student at the University of Waterloo, I blend a solid foundation in economics and business with a passion for digital design. My academic journey has equipped me with professional proficiency in Adobe Creative Suite—including Illustrator, Photoshop, InDesign, Premiere Pro, and Audition—and has allowed me to create a diverse range of projects such as logos, posters, mock-ups, prototypes, films, documentaries, audio pieces, and magazines.
+          </p>
+        </div>
+      </div>
+
+      <div class="container reverse">
+        <div class="bio">
+          <p>
+            I consider myself both imaginative and detail-oriented. I love to let my creativity explore uncharted territories, yet I also strive for perfection in every project, ensuring that even the smallest details are meticulously crafted. My passion for reading fantasy literature has exposed me to countless extraordinary worlds, continually pushing the boundaries of my imagination. Additionally, I find great satisfaction in video editing—assembling clips and refining details to build immersive worlds that transport audiences into compelling stories.
+          </p>
+        </div>
+        <div class="photo-wrapper">
+          <img src="adobe creative cloud.png" alt="Adobe Creative Tools Icons">
+        </div>
+      </div>
+
+      <div class="resume-button">
+        <a href="https://www.canva.com/design/DAGYsb3a900/HzhNEasZmHm42NCZkpET9A/view?utm_content=DAGYsb3a900&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c0ee04f51" target="_blank">Resumé</a>
+      </div>
+
+    </div>
+  </body>
+</html>
